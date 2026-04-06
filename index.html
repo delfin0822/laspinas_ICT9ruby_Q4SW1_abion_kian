@@ -146,6 +146,27 @@ hr{
 <div class="forgot">
 <a href="#">Forgot username / password?</a>
 </div>
+    <script>
+    
+    function showMessage(){
+        console.log("Instructions toggled");
+    }
+
+    
+    function authenticate(){
+        var username = document.getElementById('uname').value;
+        var password = document.getElementById('pass').value;
+
+
+        if(username === "joemama67" && password === "1234567"){
+            document.getElementById("output").innerHTML = "Welcome " + username;
+            alert("Login Successful!");
+        } else {
+            document.getElementById("output").innerHTML = "Invalid login";
+            alert("Wrong username or password");
+        }
+    }
+</script>
 
 </form>
 
